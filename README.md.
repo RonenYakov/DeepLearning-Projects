@@ -1,0 +1,12 @@
+# ResNet Deep Learning Model  
+This repository contains an implementation of a ResNet-based deep learning model.  
+
+## Project Details  
+- **Framework:** TensorFlow/Keras  
+- **Purpose:** Image classification using a deep residual network  
+- **Notebook:** `ResNet_new.ipynb`  
+
+## How to Use  
+1. Open the `.ipynb` file in Jupyter Notebook or Google Colab.  
+2.The model is allready trained and the resulst are displayed.
+3.But you can Run all cells sequentially to train the model to see it live. 
