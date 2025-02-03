@@ -1,27 +1,47 @@
-# Transfer Learning for Image Classification
+# Transfer Learning for Image Classification using ResNet
 
 ## Overview
-This project demonstrates the use of Transfer Learning to classify images into multiple categories. A pre-trained ResNet model was fine-tuned to achieve high accuracy on a custom dataset.
+This project demonstrates the use of **Transfer Learning** to classify images from the **FashionMNIST dataset**. A pre-trained **ResNet** model was fine-tuned to achieve high accuracy on this dataset, which consists of grayscale images of fashion items belonging to 10 different categories.
 
 ## Key Features
-- Utilized **ResNet** architecture with pre-trained weights for feature extraction.
-- Fine-tuned the model to optimize classification performance on a new dataset.
-- Employed techniques like **Batch Normalization** and **Dropout** to prevent overfitting.
+- Utilized **ResNet architecture** with pre-trained weights for feature extraction.
+- Fine-tuned the model to optimize classification performance on **FashionMNIST**.
+- Applied techniques such as **Batch Normalization** and **Dropout** to reduce overfitting.
+- Used **learning rate scheduling** to improve convergence and stability during training.
+
+## Dataset: FashionMNIST
+- **Source**: [FashionMNIST Dataset](https://github.com/zalandoresearch/fashion-mnist)
+- **Description**: 70,000 grayscale images of clothing items (28x28 pixels).
+- **Classes**: 10 categories, including T-shirts, trousers, pullovers, dresses, coats, sandals, shirts, sneakers, bags, and ankle boots.
+- **Training Set**: 60,000 images
+- **Test Set**: 10,000 images
 
 ## Results
-- Initial accuracy: **89%**
-- Final accuracy after fine-tuning: **93%**
+- **Initial accuracy** (using frozen layers): **88%**
+- **Final accuracy** (after fine-tuning): **94%**
 
 ## Technologies and Tools
 - **Frameworks**: PyTorch, TensorFlow
 - **Libraries**: NumPy, Matplotlib, Scikit-learn
-- **Techniques**: Batch Normalization, Dropout, Optimizer Tuning
+- **Techniques**: Transfer Learning, Batch Normalization, Dropout, Learning Rate Scheduling, Adam Optimizer
 
 ## Challenges
-- **Overfitting**: Mitigated using regularization techniques.
-- **Training Time**: Managed by reducing the learning rate during fine-tuning.
+- **Overfitting**: Mitigated using **Dropout**, **Data Augmentation**, and **L2 Regularization**.
+- **Training Time**: Reduced using **early stopping** and an **adaptive learning rate**.
 
 ## How to Run
-1. Install dependencies:
-   ```bash
-   pip install torch torchvision matplotlib scikit-learn
+1. Run the Jupyter Notebook (`ResNet_FashionMNIST.ipynb`) using Jupyter or Google Colab.
+2. Train the model on FashionMNIST by executing all cells.
+3. Evaluate the model on the test set to observe the classification performance.
+
+## Future Improvements
+- Implement **ResNet-101** to compare performance with **ResNet-50**.
+- Experiment with **different optimizers** like **SGD with momentum**.
+- Improve accuracy further using **ensemble learning**.
+
+## References
+- **ResNet Paper**: [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
+- **FashionMNIST Dataset**: [GitHub Repository](https://github.com/zalandoresearch/fashion-mnist)
+- **PyTorch ResNet Implementation**: [PyTorch Docs](https://pytorch.org/docs/stable/torchvision/models.html)
+
+You can fing further more detaild explanations in the notebook.
