@@ -34,6 +34,9 @@ This project demonstrates the use of **Transfer Learning** to classify images fr
 2. Train the model on FashionMNIST by executing all cells.
 3. Evaluate the model on the test set to observe the classification performance.
 
+## Further Details
+You can find more detailed explanations in the notebook. Additionally, a comparison with a **CNN model** tested on the same dataset is included, along with some interesting conclusions.
+
 ## Future Improvements
 - Implement **ResNet-101** to compare performance with **ResNet-50**.
 - Experiment with **different optimizers** like **SGD with momentum**.
@@ -44,4 +47,4 @@ This project demonstrates the use of **Transfer Learning** to classify images fr
 - **FashionMNIST Dataset**: [GitHub Repository](https://github.com/zalandoresearch/fashion-mnist)
 - **PyTorch ResNet Implementation**: [PyTorch Docs](https://pytorch.org/docs/stable/torchvision/models.html)
 
-You can fing further more detaild explanations in the notebook.
+
